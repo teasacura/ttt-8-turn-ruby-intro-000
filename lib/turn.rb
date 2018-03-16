@@ -35,10 +35,14 @@ def turn(board)
   user_input = gets.strip
   index = input_to_index(user_input)
 
-  if valid_move?(board, index) == true
-    move(board, index, char = "X")
+  if valid_move?(board, index)
+    move(board, index)
     display_board(board)
   else
     turn(board)
   end
+<<<<<<< HEAD
+=======
+  turn(board)
+>>>>>>> 0ddd80a0a3fbb69aee014a143b0c0278a9e33b89
 end
